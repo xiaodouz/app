@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+}
+html{
+    font-size: 100px;
+    font-family:PingFang-SC-Heavy;
+}
+img{
+    width: 100%;
+}
+p{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+@media(min-width: 320px) {
+    html{
+        font-size:42.66667px;
+    }
+}
+@media(min-width: 360px) {
+    html{
+        font-size:48px;
+    }
+}@media(min-width: 375px) {
+    html{
+        font-size:50px;
+    }
+}
+@media(min-width: 414px) {
+    html{
+        font-size:55.2px;
+    }
+}
