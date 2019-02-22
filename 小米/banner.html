@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #banner{
+            width: 1226px;
+            height: 460px;
+            border: 1px solid red;
+            margin: 0 auto;
+            position: relative;
+        }
+        #imgBox{
+            width: 1226px;
+            height: 460px;
+        }
+        #imgBox>li{
+            width: 1226px;
+            height: 460px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 2s;
+            opacity: 0.6;
+        }
+        #imgBox>li.active{
+            z-index: 1;
+            opacity: 1;
+        }
+        #imgBox>li>a{
+            display: block;
+            width: 1226px;
+            height: 460px;
+        }
+        #imgBox>li>a>img{
+            display: block;
+            width: 1226px;
+            height: 460px;
+
+        }
+        #pagerBox{
+            width: 100px;
+            height: 10px;
+            position: absolute;
+            right: 100px;
+            bottom: 50px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 99;
+        }
+        #pagerBox>li {
+            width: 6px;
+            height: 6px;
+            background: #eee;
+            border-radius: 50%;
+            border: 2px solid #d2ffdb;
+            cursor: pointer;
+        }
+        #pagerBox>li.active {
+            border: 2px solid #333;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="banner">
+    <ul id="imgBox">
+        <li class="active">
+            <a href="">
+                <img src="banner1.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="banner2.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="banner3.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="banner4.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="banner5.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+    <ul id="pagerBox">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    let imgs=document.querySelectorAll("#imgBox>li");
+    let pagers = document.querySelectorAll("#pagerBox>li");
+    pagers.forEach(function (ele,index) {
+        ele.onclick=function () {
+            for (let i=0;i<imgs.length;i++){
+                imgs[i].classList.remove("active");
+                pagers[i].classList.remove("active");
+            }
+            imgs[index].classList.add("active");
+            this.classList.add("active");
+        }
+    })
+
+</script>
+</body>
+</html>

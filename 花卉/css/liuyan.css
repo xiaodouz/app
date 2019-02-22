@@ -1,0 +1,158 @@
+/*清楚浏览器默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a  {
+    text-decoration: none;
+}
+/*头部导航栏开始*/
+.heard{
+    width: 100%;
+    height: 79px;
+    background:white;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    position:fixed;
+    top: 0;
+    z-index: 999;
+}
+.row{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    /*background: #ffac13*/
+}
+.row-log{
+    width: 150px;
+    height: 100%;
+    /*background: #83c44e;*/
+    float: left;
+    padding: 14px 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.nav{
+    width: 602px;
+    height: 100%;
+    /*background: #00a5c4;*/
+    float: right;
+
+}
+.nav li{
+    width: 86px;
+    height: 100%;
+    /*background: aqua;*/
+    color:#2a333c;
+    font-size: 14px;
+    line-height: 86px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.nav li:hover {
+    color: #00a5c4
+}
+.nav li:nth-child(6) {
+    color: #00a5c4;
+}
+/*头部导航栏结束*/
+/*标题开始*/
+.banner{
+    width: 100%;
+    height: 120px;
+    background: #F1F1F1;
+    margin-top: 79px;
+    text-align: center;
+    padding-top: 29px;
+}
+.banner h1{
+    width: 200px;
+    height: 62px;
+    padding: 10px 30px;
+    color: #F67A82;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0 auto;
+
+}
+/*标题结束*/
+/*留言模块开始*/
+.mess{
+    width: 100%;
+    height: 823.8px;
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+.container{
+    width: 1170px;
+    height: 763.8px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #2196f3;
+}
+.met-body{
+    width: 780px;
+    height: 763.8px;
+    padding: 30px;
+    float: left;
+    background: #ffac13;
+}
+.itm{
+    padding: 10px 0;
+    border-bottom: 1px solid #e4eaec;
+    width: 720px;
+}
+.mead{
+    width: 46px;
+    height: 53.8px;
+    font-size: 36px;
+    color: #a3afb7;
+    text-align: left;
+    float: left;
+    line-height: 35px;
+}
+.itm-box{
+    width: 720px;
+    height: 53.8px;
+}
+.mead i{
+    margin-right: 10px;
+
+}
+.itm-box h4{
+    font-size: 16px;
+    float: left;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #37474f;
+    width: 664px;
+    margin-bottom: 5px;
+}
+.pul{
+    padding-left: 20px;
+    float: right;
+}
+.itm-box p{
+    margin: 0 0 11px;
+    font-size: 14px;
+    color: #76838f;
+    float: left;
+}
+/*留言模块结束*/
+@font-face {
+    font-family: 'iconfont';  /* project id 1026159 */
+    src: url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.eot');
+    src: url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1026159_fzhhj3s31ii.svg#iconfont') format('svg');
+}
+i{
+    font-family: iconfont;
+    font-style: normal;
+}

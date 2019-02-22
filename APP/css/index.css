@@ -414,3 +414,16 @@ li img{
 
 
 /*底部导航栏结束*/
+@font-face {
+    font-family: 'iconfont';  /* project id 1030735 */
+    src: url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.eot');
+    src: url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1030735_k6wj8x2rwzt.svg#iconfont') format('svg');
+}
+i{
+    font-family: iconfont;
+    font-style: normal;
+}
