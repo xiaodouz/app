@@ -51,11 +51,14 @@ img{
     text-align: center;
     cursor: pointer;
 }
-.nav li:hover {
+.nav li:hover a{
     color: #00a5c4
 }
-.nav li:nth-child(5) {
+.nav li:nth-child(5) a{
     color: #00a5c4;
+}
+.nav li a{
+    color: #2a333c;
 }
 /*头部导航栏结束*/
 /*内容开始*/

@@ -49,6 +49,9 @@ img{
 .nav li:nth-child(2) {
     color: #00a5c4;
 }
+.nav li a{
+    color: #2a333c;
+}
 /*头部导航栏结束*/
 /*标题开始*/
 .banner{
